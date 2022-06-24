@@ -1,4 +1,6 @@
-import {ll2Arr, arr2LL, ListNode} from './tools/linked-lists.js';
+/** https://leetcode.com/problems/merge-k-sorted-lists/ */
+
+import {ll2Arr, arr2LL, ListNode} from '../tools/linked-lists.js';
 
 const mergeKLists = function (lists) {
     if (!lists || lists.length === 0) return null;

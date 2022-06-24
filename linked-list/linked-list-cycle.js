@@ -1,4 +1,6 @@
-import {arr2LL, getTail} from './tools/linked-lists.js';
+/** https://leetcode.com/problems/linked-list-cycle/ */
+
+import {arr2LL, getTail} from '../tools/linked-lists.js';
 
 const hasCycle = function (head) {
 

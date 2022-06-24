@@ -1,4 +1,6 @@
-import {arr2LL, ll2Arr, ListNode} from './tools/linked-lists.js';
+/** https://leetcode.com/problems/reverse-linked-list/ */
+
+import {arr2LL, ll2Arr} from '../tools/linked-lists.js';
 
 var reverseList = function(head) {
     
