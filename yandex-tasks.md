@@ -21,7 +21,7 @@ hash table:
 <https://leetcode.com/problems/4sum/>
 <https://leetcode.com/problems/group-anagrams/>
 <https://leetcode.com/problems/valid-anagram/>
-<https://leetcode.com/problems/find-all-anagrams-in-a-string/>
++ <https://leetcode.com/problems/find-all-anagrams-in-a-string/>
 
 queue/stack:
 
@@ -48,7 +48,7 @@ two pointers:
 
 sliding window:
 
-+ [PARTIAL] <https://leetcode.com/problems/sliding-window-median/>
++ <https://leetcode.com/problems/sliding-window-median/>
 + <https://leetcode.com/problems/sliding-window-maximum/>
 + [UNCLEAR] <https://leetcode.com/problems/longest-repeating-character-replacement/>
 

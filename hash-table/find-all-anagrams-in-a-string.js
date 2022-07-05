@@ -21,50 +21,38 @@ var findAnagrams = function (s, p) {
 
     // return res;
 
-    const pLen = p.length;
-    if (s.length < pLen) {
+    if (p.length > s.length) {
         return [];
     }
 
-    const hashP = new Map();
-    for (let i = 0; i < pLen; i++) {
-        hashP.set(
-            p[i],
-            (hashP.get(p[i]) || 0) + 1,
-        );
+    const compareHash = (pCount, sCount, p) => {
+        for (let i = 0; i < p.length; i++) {
+            if (pCount[p[i]] !== sCount[p[i]]) {
+                return false;
+            }
+        }
+        return true;
     }
 
-    const hashS = new Map();
+    const pLen = p.length;
+    const pCount = {};
+    const sCount = {};
+    for (let i = 0; i < pLen; i++) {
+        pCount[p[i]] = (pCount[p[i]] || 0) + 1;
+        sCount[s[i]] = (sCount[s[i]] || 0) + 1;
+    }
 
     const res = [];
-    for (let i = 0; i + pLen <= s.length; i++) {
-        console.log(s[i], (hashS.get(s[i]) || 0) + 1,)
-        hashS.set(
-            s[i],
-            (hashS.get(s[i]) || 0) + 1,
-        );
-
-        if (i < pLen - 1) {
-            continue;
-        }
-        let flag = true;
-        hashS.forEach((value, key) => {
-            if (hashP.get(key) !== value) {
-                flag = false;
-            }
-        });
-        if (flag === true) {
+    for (let i = pLen; i <= s.length; i++) {
+        if (compareHash(pCount, sCount, p)) {
             res.push(i - pLen);
         }
-        hashS.set(
-            s[i - pLen],
-            hashS.get(s[i - pLen]) - 1,
-        );
-
+        sCount[s[i - pLen]] -= 1;
+        sCount[s[i]] = (sCount[s[i]] || 0) + 1;
     }
 
     return res;
 };
 
 console.log(findAnagrams("cbaebabacd", "abc"));
-// console.log(findAnagrams("abab", "ab"));
+console.log(findAnagrams("abab", "ab"));
