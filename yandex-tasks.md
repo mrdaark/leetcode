@@ -18,7 +18,7 @@ hash table:
 
 + <https://leetcode.com/problems/single-number/> - решить за O(1) по памяти
 + <https://leetcode.com/problems/two-sum/>
-<https://leetcode.com/problems/4sum/>
++ <https://leetcode.com/problems/4sum/>
 <https://leetcode.com/problems/group-anagrams/>
 <https://leetcode.com/problems/valid-anagram/>
 + <https://leetcode.com/problems/find-all-anagrams-in-a-string/>
@@ -63,5 +63,5 @@ greedy problems:
 
 + <https://leetcode.com/problems/best-time-to-buy-and-sell-stock/>
 + <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/>
-<https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/>
++ <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/>
 <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/>
