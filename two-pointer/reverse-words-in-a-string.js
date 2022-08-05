@@ -1,5 +1,20 @@
 var reverseWords = function (s) {
     // return s.split(' ').filter(i => !!i).reverse().join(' ');
+
+
+    // const words = s.split(/\s+/);
+    // let start = 0;
+    // let end = words.length - 1;
+
+    // while (start < end) {
+    //     [words[start], words[end]] = [words[end], words[start]];
+    //     start++;
+    //     end--;
+    // }
+
+    // return words.join(' ').trim();
+
+
     let res = '';
     let word = '';
     for (let i = 0; i < s.length; i++) {
@@ -17,7 +32,7 @@ var reverseWords = function (s) {
         word = '';
     }
 
-    return res.slice(0,-1);
+    return res.slice(0, -1);
 };
 
 console.log(reverseWords('the sky is blue'));
